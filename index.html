@@ -1,42 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Rockville Repair Inventory</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+<p class="company-info">
+  Rockville Repair | Phone: (555) 867-5309
+</p>
 
-<div class="overlay">
+<button onclick="toggleMobileMode()" class="mobile-btn">
+  Mobile Mechanic Mode
+</button>
 
-  <h1>ROCKVILLE REPAIR</h1>
-  <h2>Inventory System</h2>
-
-  <div class="controls">
-    <input type="text" id="searchInput" placeholder="Search Parts..." onkeyup="searchParts()">
-  </div>
-
-  <div class="add-section">
-    <input type="text" id="newPart" placeholder="New Part Name">
-    <input type="number" id="newQty" placeholder="Qty">
-    <button onclick="addNewPart()">Add Part</button>
-  </div>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Part</th>
-        <th>Qty</th>
-        <th>Adjust</th>
-        <th>Status</th>
-        <th>Delete</th>
-      </tr>
-    </thead>
-    <tbody id="inventoryTable"></tbody>
-  </table>
-
-</div>
-
-<script src="script.js"></script>
-</body>
-</html>
+<button onclick="exportToExcel()" class="export">
+  Export to Excel
+</button>
